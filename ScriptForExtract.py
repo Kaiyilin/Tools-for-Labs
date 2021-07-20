@@ -1,7 +1,7 @@
 import sys, os
 import numpy as np 
 import pandas as pd 
-import pingouin as pg
+#import pingouin as pg
 
 outputPath = input("\n Giving the output directory: ")
 
@@ -60,4 +60,4 @@ outputName = input("\n\033[93mName of the output? \033[00m")
 new_CordinateFile.to_csv(os.path.join(outputPath, f"{outputName}.csv"))
 
 
-pg.partial_corr(data=df,x = "HAM-D", y ='SA', covar= [ "gender", " age" ,"years of education"])
+#pg.partial_corr(data=df,x = "HAM-D", y ='SA', covar= [ "gender", " age" ,"years of education"])
